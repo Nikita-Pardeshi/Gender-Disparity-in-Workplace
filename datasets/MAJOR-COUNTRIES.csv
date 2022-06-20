@@ -1,0 +1,70 @@
+Country,Length of paid maternity leave,Length of paid paternity leave,Region
+Algeria,98,3,Africa
+Cameroon,98,3,Africa
+Central African Republic,98,1,Africa
+Congo,105,0,Africa
+Egypt,90,0,Africa
+Equatorial Guinea,84,3,Africa
+Ethiopia,120,3,Africa
+Ghana,84,0,Africa
+Guinea,98,0,Africa
+Kenya,90,14,Africa
+Morocco,98,3,Africa
+Mozambique,60,1,Africa
+Namibia,84,0,Africa
+Nigeria,84,0,Africa
+Papua New Guinea,0,0,Africa
+Rwanda,84,4,Africa
+South Africa,120,14,Africa
+Sudan,56,0,Africa
+Tanzania,84,3,Africa
+Zimbabwe,98,0,Africa
+Argentina,90,2,Americas
+Bolivia,90,3,Americas
+Brazil,120,7,Americas
+Canada,105,0,Americas
+Chile,126,7,Americas
+Colombia,126,10,Americas
+Jamaica,56,0,Americas
+Mexico,84,7,Americas
+Nicaragua,84,7,Americas
+Panama,98,3,Americas
+Puerto Rico,56,0,Americas
+United States,0,0,Americas
+Uruguay,98,13,Americas
+Venezuela,182,14,Americas
+Afghanistan,90,14,Asia
+Azerbaijan,126,0,Asia
+China,128,14,Asia
+Hong Kong,70,7,Asia
+India,182,0,Asia
+Iran,180,14,Asia
+Iraq,98,0,Asia
+Israel,105,0,Asia
+Japan,98,0,Asia
+Korea,90,14,Asia
+Qatar,50,0,Asia
+Russia,140,0,Asia
+Saudi Arabia,70,3,Asia
+Singapore,84,14,Asia
+Syria,120,0,Asia
+Turkey,112,7,Asia
+UAE,45,0,Asia
+Austria,112,30,Europe
+Belgium,105,14,Europe
+Denmark,126,14,Europe
+Finland,147,76,Europe
+France,112,15,Europe
+Germany,98,0,Europe
+Ireland,182,14,Europe
+Italy,150,9,Europe
+Netherlands,112,42,Europe
+Poland,140,14,Europe
+Portugal,0,35,Europe
+Spain,112,84,Europe
+Sweden,0,14,Europe
+Switzerland,98,0,Europe
+United Kingdom,42,14,Europe
+Australia,0,14,Oceania
+Fiji,98,2,Oceania
+New Zealand,0,0,Oceania

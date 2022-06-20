@@ -1,0 +1,77 @@
+---
+title: "Index Scores by Country"
+output: html_document
+---
+
+```{r setup, include=TRUE}
+options(warn = -1)
+#load relevant libraries
+library(leaflet)
+library(plotly)
+library(crosstalk)
+library(dplyr)
+```
+
+### Load the Disparity Scores data
+
+```{r include=TRUE}
+
+disp= read.csv('~/datasets/disparity-scores.csv')
+head(disp)
+
+```
+
+### Load Latitudes and Longitudes data for plotting world map
+
+```{r include=TRUE}
+lat_long= read.csv('lat-long.csv')
+head(lat_long)
+
+coord=disp %>% inner_join(lat_long,by="Economy")
+
+```
+
+### Plot charts based on different indexes- Mobility, Pay, Parenthood, Pension etc. 
+
+
+```{r include=TRUE}
+
+disp1 <- highlight_key(coord) #enable the highlight/ interactive feature i.e. add the ability to click a particular a given point on a line to highlight that particular country
+
+
+p <- plot_ly(disp1, x = ~Report.Year, y = ~MOBILITY) %>% 
+ add_lines(alpha = 0.8) %>% 
+ highlight("plotly_selected") #plot the line chart/ time series plot 
+
+map <- leaflet(disp1) %>% 
+  addTiles() %>%  #plot the world map with points for each country
+  addCircles()
+
+#add dropdowns and filter
+widgets <- bscols(
+  widths = c(6, 6, 6),
+  filter_select("Economy", "Country (select Country name to view progress in Index Score)", disp1, ~Economy, multiple=FALSE),
+  filter_slider("Report.Year", "Year (filter data by Year and/or Country)", disp1, ~Report.Year)
+)
+
+#plot the final chart
+bscols(
+  widths = c(6,10, 10),widgets, 
+  p, map
+) 
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+

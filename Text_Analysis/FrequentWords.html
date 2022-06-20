@@ -1,0 +1,65 @@
+<html>
+        <head>
+        <style>
+            div {                   
+            font-family: Georgia;
+            padding: 0px;
+            border: 0px solid #000000;      
+        }
+        .txt3 {
+            font-weight: normal;
+                font-size: 15px;
+            font-weight: bold;
+            font-family: Georgia;   
+        }
+        .txt4 {
+            font-weight: normal;
+                font-size: 15px;
+            font-weight: bold;
+            font-family: Georgia;   
+                margin-top: 2px;        
+            margin-left: 0px;
+                color:#000000;
+            border: 2px solid #BC401E;
+        }
+        </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        </head>
+        <body>
+            <script language=javascript>
+                var theSelect,theIframe;
+                var today = new Date(),
+
+            number_of_day = today.getDay();
+                $(document).ready(function() {
+                //var today = new Date();
+                //var n = today.getDay();
+                theSelect = document.getElementById('location');
+                theIframe = document.getElementById('myIframe');
+                theUrl = "NewsWordCount.html";
+                theIframe.src = theUrl;
+            });
+            function setIframeSource() 
+            {
+              var theUrl;
+
+         
+                theUrl = theSelect.options[theSelect.selectedIndex].value;
+              theIframe.src = theUrl;
+            }
+            </script>
+            <form id="form1" method="post">
+          <label class="txt3"> Frequently used Words in association Wage/Pay Gap in :
+            <select class="txt4" id="location" onchange="setIframeSource()">
+              <option value="NewsWordCount.html">News Articles</option>
+              <option value="TweetWordCount.html">Tweets</option>
+              <option value="SpeechWordCount.html">Political Speeches</option>
+            </select>
+          </label>
+        </form>
+        <br>
+        <br>
+
+        <iframe id="myIframe" src="NewsWordCount.html" frameborder="0" marginwidth="0" marginheight="0" width="900" height="900" allowfullscreen scrolling="no"></iframe>
+        </body>
+        </html>
