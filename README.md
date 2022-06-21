@@ -10,4 +10,4 @@ Women’s involvement in the labor market has changed in several notable ways ov
 Today, women have just three-quarters of the legal rights of men; in 1970, it was less than half. The [Women, Business and the Law 2020](https://openknowledge.worldbank.org/bitstream/handle/10986/32639/9781464815324.pdf?sequence=6&isAllowed=y) report presented results on how laws have changed since 1970. We aim to evaluate and find correlation between a country’s performance based on the Women, Business and the Law (WBL) index and women in the labor force,wage gap between men and women, and investments in health and education. By this analysis, we aim to provide more evidence that will inspire policymakers to change their laws so that more women can contribute to economic growth and development.
 
 
-Please refer to the complete project description and questions addressed [here](). 
+Please refer to the complete project description and questions addressed [here](https://github.com/Nikita-Pardeshi/Gender-Disparity-in-Workplace/blob/324c23085df6836a2aecfb53de82ef82254782ad/Project%20Description.pdf). 
