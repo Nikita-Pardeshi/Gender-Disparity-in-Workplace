@@ -4,8 +4,8 @@ import altair as alt
 
 
 # Importing data
-data=pd.read_csv("./datasets/Women Business and the Law Index Score (scale 1-100) & flag data.csv")
-td=pd.read_csv("./datasets/WBL2022_Reforms Database.xlsx - ReformDatabase.csv")
+data=pd.read_csv("../datasets/Women Business and the Law Index Score (scale 1-100) & flag data.csv")
+td=pd.read_csv("../datasets/WBL2022_Reforms Database.xlsx - ReformDatabase.csv")
 
 #Merging data frames
 data1=pd.merge(td,data,on='ID')
